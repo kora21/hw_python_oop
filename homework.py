@@ -48,7 +48,7 @@ class Training:
 
     def get_spent_calories(self) -> float:
         """Получить количество затраченных калорий."""
-        pass
+        NotImplementedError
 
     def show_training_info(self) -> InfoMessage:
         """Вернуть информационное сообщение о выполненной тренировке."""
@@ -152,8 +152,7 @@ def read_package(workout_type: str, data: list) -> Training:
                                            'WLK': SportsWalking
                                            }
 
-    action = WORKOUTS[workout_type]
-    final = action(*data)
+    final = WORKOUTS[workout_type](*data)
     return final
 
 
