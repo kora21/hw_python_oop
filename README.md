@@ -39,6 +39,7 @@ pip install -r requirements.txt
   * Запустите из терминале командой
 ```
 python homework.py
+```
 
 Автор: 
 [Ekaterina Tarasenko](https://github.com/kora21/)
